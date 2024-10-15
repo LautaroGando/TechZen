@@ -50,7 +50,7 @@ export const RenderProductCart: React.FC = (): React.ReactElement => {
                     storedProducts.length > 0 ? (
                         <>
                             <div className="h-[50vh] overflow-y-scroll scrollY">
-                                <div className="lColor text-xl font-medium flex justify-between border-[#f3f4f6] border-b-[3px] py-5 sticky top-0 pBColor">
+                                <div className="lColor text-sm font-medium flex justify-between border-[#f3f4f6] border-b-[3px] py-5 sticky top-0 pBColor md:text-xl">
                                     <h2 className="w-1/4 text-center">Producto</h2>
                                     <h2 className="w-1/4 text-center">Precio</h2>
                                     <h2 className="w-1/4 text-center">Cantidad</h2>
@@ -59,9 +59,9 @@ export const RenderProductCart: React.FC = (): React.ReactElement => {
                                 {
                                     storedProducts.map((product: IProductAndQuantity) => (
 
-                                        <div className="lColor text-xl font-light flex justify-between items-center border-[#f3f4f6] border-b-[1px] py-5" key={product.id}>
-                                            <div className="flex gap-5 w-1/4 items-center">
-                                                <Image className="w-[70px]" src={product.image} alt="Imagen del producto" width={700} height={0} priority />
+                                        <div className="lColor text-sm font-light flex justify-between items-center border-[#f3f4f6] border-b-[1px] py-5 md:text-xl" key={product.id}>
+                                            <div className="flex gap-5 w-1/4 items-center justify-center">
+                                                <Image className="w-[70px] hidden md:flex" src={product.image} alt="Imagen del producto" width={700} height={0} priority />
                                                 <h3>{product.name}</h3>
                                             </div>
                                             <h3 className="text-center w-1/4">${product.price}.00</h3>

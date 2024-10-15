@@ -36,9 +36,9 @@ export const RegisterForm: React.FC = (): React.ReactElement => {
         >
             {
                 ({ errors, touched }: FormikProps<IUserRegister>) => (
-                    <Form className="pBColor flex flex-col w-[500px] h-[100vh] rounded-tl-[50px] rounded-bl-[50px] justify-center items-center gap-10">
+                    <Form className="pBColor flex flex-col w-full h-auto justify-center py-10 items-center gap-10 lg:h-[100vh] lg:rounded-tl-[80px] lg:rounded-bl-[80px] lg:w-3/4">
                         <h2 className="lColor text-[36px] font-semibold">REGíSTRATE</h2>
-                        <div className="relative w-[300px]">
+                        <div className="relative w-[300px] flex flex-col items-center gap-5">
                             <Field className='input' type='text' name='name' placeholder='Nombre completo' />
                             {touched.name && errors.name && (
                                 <span className="inputError scrollY">
@@ -46,7 +46,7 @@ export const RegisterForm: React.FC = (): React.ReactElement => {
                                 </span>
                             )}
                         </div>
-                        <div className="relative w-[300px]">
+                        <div className="relative w-[300px] flex flex-col items-center gap-5">
                             <Field className='input' type='email' name='email' placeholder='Correo electrónico' />
                             {touched.email && errors.email && (
                                 <span className="inputError scrollY">
@@ -54,7 +54,7 @@ export const RegisterForm: React.FC = (): React.ReactElement => {
                                 </span>
                             )}
                         </div>
-                        <div className="relative w-[300px]">
+                        <div className="relative w-[300px] flex flex-col items-center gap-5">
                             <Field className='input' type='password' name='password' placeholder='Contraseña' />
                             {touched.password && errors.password && (
                                 <span className="inputError scrollY">
@@ -62,7 +62,7 @@ export const RegisterForm: React.FC = (): React.ReactElement => {
                                 </span>
                             )}
                         </div>
-                        <div className="relative w-[300px]">
+                        <div className="relative w-[300px] flex flex-col items-center gap-5">
                             <Field className='input' type='text' name='address' placeholder='Dirección' />
                             {touched.address && errors.address && (
                                 <span className="inputError scrollY">
@@ -70,7 +70,7 @@ export const RegisterForm: React.FC = (): React.ReactElement => {
                                 </span>
                             )}
                         </div>
-                        <div className="relative w-[300px]">
+                        <div className="relative w-[300px] flex flex-col items-center gap-5">
                             <Field className='input' type='text' name='phone' placeholder='Teléfono' />
                             {touched.phone && errors.phone && (
                                 <span className="inputError scrollY">

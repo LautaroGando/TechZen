@@ -21,7 +21,7 @@ export const TokenProvider: React.FC<{ children: ReactNode }> = ({ children }) =
 
         setLoading(false);
 
-    }, []);
+    }, [token]);
 
     const handleLogout = () => {
 

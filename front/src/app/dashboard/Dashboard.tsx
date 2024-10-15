@@ -6,9 +6,9 @@ export const Dashboard: React.FC = (): React.ReactElement => {
 
     return (
 
-        <div className="h-[calc(100vh-220px)] flex justify-center items-center gap-10">
+        <div className="min-h-[calc(100vh-220px)] flex flex-col justify-center items-center gap-10 md:h-[calc(100vh-220px)] md:flex-row lg:flex-row">
             <ImageUser />
-            <div className="w-[1px] h-[400px] lBColor"></div>
+            <div className="h-[1px] w-full lBColor md:w-[1px] md:h-[400px]"></div>
             <InfoUser />
         </div>
 

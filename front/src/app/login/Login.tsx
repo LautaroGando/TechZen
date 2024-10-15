@@ -8,7 +8,7 @@ export const Login: React.FC = (): React.ReactElement => {
     return (
 
         <div className="bg-[url('/assets/images/background.png')] h-[100vh]">
-            <div className="w-full h-full bg-[#000000ad] flex items-center">
+            <div className="w-full h-full bg-[#000000ad] flex flex-col items-center justify-between lg:flex-row">
                 <BackToHome />
                 <FormInfo />
                 <LoginForm />

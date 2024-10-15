@@ -19,7 +19,7 @@ export const Footer: React.FC = (): React.ReactElement => {
             {
                 showFooter && (
                     <footer className="h-[120px] shadow-2xl shadow-black flex justify-center items-center">
-                        <h3 className="lColor text-3xl font-light">&copy;Copyright TechZen {date}</h3>
+                        <h3 className="lColor text-2xl sm:text-3xl font-light">&copy;Copyright TechZen {date}</h3>
                     </footer>
                 )
             }
