@@ -11,7 +11,7 @@ export const ProductDetail: React.FC<IPropsProductDetail> = (pathname: IPropsPro
 
     return (
 
-        <div className=" flex justify-center items-center lg:h-[calc(100vh-220px)]">
+        <div className="min-h-[calc(100vh-220px)] flex justify-center items-center lg:h-[calc(100vh-220px)]">
             <RenderProductId id={pathname.params.id} />
         </div>
 

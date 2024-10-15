@@ -38,7 +38,7 @@ export const RenderProductId: React.FC<IPropsRenderProductId> = ({ id }: IPropsR
                                 <h2 className="lColor text-[30px] font-bold">${findProduct.price * quantity === 0 ? findProduct.price * 1 : findProduct.price * quantity}.00</h2>
                             </div>
                             <div className="flex justify-between">
-                                <select onChange={handleQuantity} className="pBColor lColor border-[#f3f4f6] border-b-[3px] w-[90px] outline-none lg:w-[200px]" name="quantity" id="quantity">
+                                <select onChange={handleQuantity} className="pBColor lColor border-[#f3f4f6] border-b-[3px] w-[90px] outline-none sm:w-[200px]" name="quantity" id="quantity">
                                     <option value="">Seleccione una opción:</option>
                                     {
                                         [...Array(findProduct.stock)].map((_, i) => (
