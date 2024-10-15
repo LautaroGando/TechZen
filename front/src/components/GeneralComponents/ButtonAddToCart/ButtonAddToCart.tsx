@@ -71,7 +71,7 @@ export const ButtonAddToCart: React.FC<IPropsButtonAddToCart<IProduct>> = ({ pro
 
     };
 
-    return <button onClick={handleAddProduct} className="px-5 py-3 w-[200px] cBColor lColor transition-all hover:bg-[#6ca7ecad] disabled:bg-[#373737]" disabled={disabled}>AGREGAR AL CARRITO</button>;
+    return <button onClick={handleAddProduct} className="px-5 py-3 w-[200px] text-sm cBColor lColor transition-all hover:bg-[#6ca7ecad] disabled:bg-[#373737] md:text-base" disabled={disabled}>AGREGAR AL CARRITO</button>;
 
 };
 
