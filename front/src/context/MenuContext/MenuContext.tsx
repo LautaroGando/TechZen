@@ -1,6 +1,12 @@
 "use client";
 
-import { createContext, ReactNode, useContext, useState } from "react";
+// Vendors
+import { createContext, ReactNode } from "react";
+
+// Hooks
+import { useContext, useState } from "react";
+
+// Types
 import { IPropsMenuContext } from "./types";
 
 const MenuContext = createContext<IPropsMenuContext | null>(null);
@@ -13,7 +19,7 @@ export const MenuProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     const handleCloseMenu = () => setMenu(false);
 
     return (
-        <MenuContext.Provider value={{menu, handleToggleMenu, handleCloseMenu}}>
+        <MenuContext.Provider value={{ menu, handleToggleMenu, handleCloseMenu }}>
             {children}
         </MenuContext.Provider>
     );

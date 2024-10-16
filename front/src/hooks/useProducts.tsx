@@ -1,6 +1,11 @@
-import { IProduct } from "@/components/HomeComponents/Product/types";
-import { fetchProducts } from "@/helpers/fetchProducts";
+// Hooks
 import { useEffect, useState } from "react";
+
+// Types
+import { IProduct } from "@/components/HomeComponents/Product/types";
+
+// Helpers
+import { fetchProducts } from "@/helpers/fetchProducts";
 
 export const useProducts = () => {
 
@@ -13,7 +18,7 @@ export const useProducts = () => {
 
             const data = await fetchProducts();
 
-            setProducts(data);
+            setProducts(data || []);
             setLoading(false);
 
         };

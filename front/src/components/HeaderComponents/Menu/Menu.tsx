@@ -1,7 +1,14 @@
+// Vendors
 import React from "react";
-import styles from './Menu.module.css';
+
+// Next
 import Link from "next/link";
+
+// Hooks
 import { useMenu } from "@/context/MenuContext/MenuContext";
+
+// Styles
+import styles from './Menu.module.css';
 
 export const Menu: React.FC = (): React.ReactElement => {
 

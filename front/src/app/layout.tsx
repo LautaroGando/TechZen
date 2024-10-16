@@ -1,10 +1,17 @@
+// Next
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+
+// Context
 import { TokenProvider } from "@/context/TokenContext/TokenContext";
+import { MenuProvider } from "@/context/MenuContext/MenuContext";
+
+// Components
 import Footer from "@/components/FooterComponents/Footer/Footer";
 import Header from "@/components/HeaderComponents/Header/Header";
-import { MenuProvider } from "@/context/MenuContext/MenuContext";
+
+// Styles
+import "./globals.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

@@ -1,4 +1,7 @@
+// Vendors
 import React from "react";
+
+// Components
 import RenderProductCart from "../RenderProductCart/RenderProductCart";
 
 export const ProductCart: React.FC = (): React.ReactElement => {

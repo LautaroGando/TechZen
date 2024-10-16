@@ -1,5 +1,8 @@
-import Link from "next/link";
+// Vendors
 import React from "react";
+
+// Next
+import Link from "next/link";
 
 export const BackToHome: React.FC = (): React.ReactElement => {
 

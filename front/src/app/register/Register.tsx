@@ -1,7 +1,10 @@
+// Vendors
+import React from "react";
+
+// Components
 import BackToHome from "@/components/GeneralComponents/BackToHome/BackToHome";
 import FormInfo from "@/components/GeneralComponents/FormInfo/FormInfo";
 import RegisterForm from "@/components/RegisterComponents/RegisterForm/RegisterForm";
-import React from "react";
 
 export const Register: React.FC = (): React.ReactElement => {
 

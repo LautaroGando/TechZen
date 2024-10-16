@@ -1,11 +1,20 @@
 "use client";
 
+// Vendors
+import React from "react";
+
+// Next
+import Link from "next/link";
+
+// Hooks
+import { useRouter } from "next/navigation";
+
+// Helpers
 import { fetchRegisterUser } from "@/helpers/fetchRegisterUser";
 import { IUserRegister, validateRegister } from "@/helpers/validateRegister";
+
+// Libraries
 import { ErrorMessage, Field, Form, Formik, FormikProps } from "formik";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
-import React from "react";
 
 export const RegisterForm: React.FC = (): React.ReactElement => {
 

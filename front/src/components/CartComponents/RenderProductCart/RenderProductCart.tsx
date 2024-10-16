@@ -1,11 +1,21 @@
 "use client";
 
-import { IProductAndQuantity } from "@/components/HomeComponents/Product/types";
-import useUserData from "@/hooks/useUserData";
+// Vendors
+import React from "react";
+
+// Next
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import ButtonFinalizePurchase from "../ButtonFinalizePurchase/ButtonFinalizePurchase";
+
+// Hooks
+import { useUserData } from "@/hooks/useUserData";
+import { useEffect, useState } from "react";
 import { useToken } from "@/context/TokenContext/TokenContext";
+
+// Components
+import ButtonFinalizePurchase from "../ButtonFinalizePurchase/ButtonFinalizePurchase";
+
+// Types
+import { IProductAndQuantity } from "@/components/HomeComponents/Product/types";
 
 export const RenderProductCart: React.FC = (): React.ReactElement => {
 
@@ -21,11 +31,11 @@ export const RenderProductCart: React.FC = (): React.ReactElement => {
             const products = localStorage.getItem(`productsCart-${userData?.id}`);
 
             if (products) {
-    
+
                 setStoredProducts(JSON.parse(products));
-                
+
             };
-    
+
             setLoading(false);
 
         }

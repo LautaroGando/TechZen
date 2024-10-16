@@ -33,7 +33,7 @@ export const ButtonFinalizePurchase: React.FC<IPropsButtonFinalizePurchase<IProd
 
     };
 
-    return <button onClick={handleDispatch} className="px-5 py-3 w-[200px] cBColor lColor transition-all hover:bg-[#6ca7ecad] mt-24 m-auto">FINALIZAR COMPRA</button>;
+    return <button onClick={handleDispatch} className="px-5 py-3 w-[200px] cBColor lColor transition-all hover:bg-[#6ca7ecad] mt-24 mb-5 m-auto">FINALIZAR COMPRA</button>;
 
 };
 

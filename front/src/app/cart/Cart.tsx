@@ -1,5 +1,8 @@
-import ProductCart from "@/components/CartComponents/ProductCart/ProductCart";
+// Vendors
 import React from "react";
+
+// Components
+import ProductCart from "@/components/CartComponents/ProductCart/ProductCart";
 
 export const Cart: React.FC = (): React.ReactElement => {
 

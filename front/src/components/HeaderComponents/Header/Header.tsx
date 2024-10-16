@@ -1,8 +1,13 @@
 "use client";
 
+// Vendors
 import React from "react";
-import NavBar from "../NavBar/NavBar";
+
+// Hooks
 import { usePathname } from "next/navigation";
+
+// Components
+import NavBar from "../NavBar/NavBar";
 
 export const Header: React.FC = (): React.ReactElement => {
 

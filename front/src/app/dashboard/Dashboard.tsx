@@ -1,6 +1,9 @@
+// Vendors
+import React from "react";
+
+// Components
 import ImageUser from "@/components/DashboardComponents/ImageUser/ImageUser";
 import InfoUser from "@/components/DashboardComponents/InfoUser/InfoUser";
-import React from "react";
 
 export const Dashboard: React.FC = (): React.ReactElement => {
 

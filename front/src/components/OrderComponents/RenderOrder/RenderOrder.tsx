@@ -1,11 +1,21 @@
 "use client";
 
-import { useToken } from "@/context/TokenContext/TokenContext";
-import { fetchGetOrders } from "@/helpers/fetchGetOrders";
-import React, { useEffect, useState } from "react";
-import { IOrder } from "./types";
-import { IProduct } from "@/components/HomeComponents/Product/types";
+// Vendors
+import React from "react";
+
+// Next
 import Image from "next/image";
+
+// Hooks
+import { useToken } from "@/context/TokenContext/TokenContext";
+import { useEffect, useState } from "react";
+
+// Types
+import { IProduct } from "@/components/HomeComponents/Product/types";
+import { IOrder } from "./types";
+
+// Helpers
+import { fetchGetOrders } from "@/helpers/fetchGetOrders";
 
 export const RenderOrder: React.FC = (): React.ReactElement => {
 

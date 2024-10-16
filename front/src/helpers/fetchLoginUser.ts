@@ -1,5 +1,8 @@
-import Swal from "sweetalert2";
+// Types
 import { IUserLogin } from "./validateLogin";
+
+// Libraries
+import Swal from "sweetalert2";
 import Cookies from "js-cookie";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL;

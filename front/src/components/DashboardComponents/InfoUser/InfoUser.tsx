@@ -1,9 +1,14 @@
 "use client";
 
-import { useToken } from "@/context/TokenContext/TokenContext";
-import useUserData from "@/hooks/useUserData";
-import Link from "next/link";
+// Vendors
 import React from "react";
+
+// Next
+import Link from "next/link";
+
+// Hooks
+import { useToken } from "@/context/TokenContext/TokenContext";
+import { useUserData } from "@/hooks/useUserData";
 
 export const InfoUser: React.FC = (): React.ReactElement => {
 

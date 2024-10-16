@@ -1,10 +1,19 @@
-import { useToken } from "@/context/TokenContext/TokenContext";
-import Link from "next/link";
+// Vendors
 import React from "react";
+
+// Next
+import Link from "next/link";
+
+// Hooks
+import { useToken } from "@/context/TokenContext/TokenContext";
+import { useMenu } from "@/context/MenuContext/MenuContext";
+
+// Components
 import Menu from "../Menu/Menu";
+
+// Libraries
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
-import { useMenu } from "@/context/MenuContext/MenuContext";
 
 export const NavBar: React.FC = (): React.ReactElement => {
 

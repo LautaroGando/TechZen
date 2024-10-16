@@ -1,3 +1,4 @@
+// Vendors
 import React from "react";
 
 export interface IProduct {
@@ -12,6 +13,11 @@ export interface IProduct {
 
 export interface IProductAndQuantity extends IProduct {
     quantity: number;
+};
+
+export interface ICategory {
+    id: number;
+    name: string;
 };
 
 export interface IPropsCatalog<Item> {

@@ -1,3 +1,4 @@
+// Vendors
 import React from "react";
 
 export const FormInfo: React.FC = (): React.ReactElement => {

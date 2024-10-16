@@ -1,9 +1,18 @@
 "use client";
 
-import React, { createContext, ReactNode, useContext, useEffect, useState } from "react";
-import Cookies from 'js-cookie';
+// Vendors
+import React, { createContext, ReactNode } from "react";
+
+// Hooks
+import { useContext, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+
+// Types
 import { IPropsTokenContext } from "./types";
+
+// Libraries
+import Cookies from 'js-cookie';
+import Swal from "sweetalert2";
 
 const TokenContext = createContext<IPropsTokenContext | null>(null);
 
@@ -25,14 +34,30 @@ export const TokenProvider: React.FC<{ children: ReactNode }> = ({ children }) =
 
     const handleLogout = () => {
 
-        localStorage.removeItem("userData");
-        localStorage.removeItem("userToken");
+        Swal.fire({
+            title: "¿Seguro desea cerrar sesión?",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "¡Sí, cerrar sesión!",
+            cancelButtonText: "¡No!"
+        }).then((result) => {
 
-        Cookies.remove("userToken");
+            if (result.isConfirmed) {
 
-        setToken(null);
+                localStorage.removeItem("userData");
+                localStorage.removeItem("userToken");
 
-        router.push("/");
+                Cookies.remove("userToken");
+
+                setToken(null);
+
+                router.push("/");
+
+            };
+
+        });
 
     };
 

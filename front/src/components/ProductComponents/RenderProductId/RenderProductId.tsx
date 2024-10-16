@@ -1,11 +1,21 @@
 "use client";
 
-import React, { useState } from "react";
-import { IPropsRenderProductId } from "./types";
-import useProducts from "@/hooks/useProducts";
-import { IProduct } from "@/components/HomeComponents/Product/types";
+// Vendors
+import React from "react";
+
+// Next
 import Image from "next/image";
+
+// Hooks
+import { useState } from "react";
+import { useProducts } from "@/hooks/useProducts";
+
+// Components
 import ButtonAddToCart from "@/components/GeneralComponents/ButtonAddToCart/ButtonAddToCart";
+
+// Types
+import { IPropsRenderProductId } from "./types";
+import { IProduct } from "@/components/HomeComponents/Product/types";
 
 export const RenderProductId: React.FC<IPropsRenderProductId> = ({ id }: IPropsRenderProductId): React.ReactElement => {
 
@@ -42,7 +52,7 @@ export const RenderProductId: React.FC<IPropsRenderProductId> = ({ id }: IPropsR
                                     <option value="">Seleccione una opción:</option>
                                     {
                                         [...Array(findProduct.stock)].map((_, i) => (
-                                            <option key={i + 1} value={i + 1}>{`${i + 1} ${i + 1 > 1 ? "Unidades" : "Unidad"}`}</option>    
+                                            <option key={i + 1} value={i + 1}>{`${i + 1} ${i + 1 > 1 ? "Unidades" : "Unidad"}`}</option>
                                         ))
                                     }
                                 </select>

@@ -1,5 +1,10 @@
+// Vendors
 import React from "react";
+
+// Components
 import Product from "../Product/Product";
+
+// Utils
 import { renderProducts } from "../Product/utils";
 
 export const Catalog: React.FC = (): React.ReactElement => {

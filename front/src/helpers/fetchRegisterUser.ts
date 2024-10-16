@@ -1,5 +1,8 @@
-import Swal from "sweetalert2";
+// Types
 import { IUserRegister } from "./validateRegister";
+
+// Libraries
+import Swal from "sweetalert2";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
 

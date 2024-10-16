@@ -1,7 +1,10 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+// Vendors
 import React from "react";
+
+// Hooks
+import { usePathname } from "next/navigation";
 
 export const Footer: React.FC = (): React.ReactElement => {
 

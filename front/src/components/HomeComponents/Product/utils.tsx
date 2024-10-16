@@ -1,10 +1,60 @@
 "use client";
 
-import Image from "next/image";
-import { IProduct } from "./types";
+// Vendors
 import React from "react";
+
+// Next
+import Image from "next/image";
 import Link from "next/link";
+
+// Components
 import ButtonAddToCart from "@/components/GeneralComponents/ButtonAddToCart/ButtonAddToCart";
+
+// Types
+import { ICategory, IProduct } from "./types";
+
+export const categories: ICategory[] = [
+    {
+        id: 0,
+        name: 'All',
+    },
+    {
+        id: 1,
+        name: 'Smartphones',
+    },
+    {
+        id: 2,
+        name: 'Laptops',
+    },
+    {
+        id: 3,
+        name: 'Tablets',
+    },
+    {
+        id: 4,
+        name: 'Headphones',
+    },
+    {
+        id: 5,
+        name: 'Cameras',
+    },
+    {
+        id: 6,
+        name: 'Printers',
+    },
+    {
+        id: 7,
+        name: 'Monitors',
+    },
+    {
+        id: 8,
+        name: 'Storage',
+    },
+    {
+        id: 9,
+        name: 'Accessories',
+    },
+];
 
 export const renderProducts = (product: IProduct): React.ReactElement => {
 

@@ -1,3 +1,4 @@
+// Vendors
 import React from "react";
 
 export const ImageUser: React.FC = (): React.ReactElement => {

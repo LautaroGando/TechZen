@@ -1,6 +1,9 @@
+// Vendors
+import React from "react";
+
+// Components
 import LoginForm from "@/components/LoginComponents/LoginForm/LoginForm";
 import FormInfo from "@/components/GeneralComponents/FormInfo/FormInfo";
-import React from "react";
 import BackToHome from "@/components/GeneralComponents/BackToHome/BackToHome";
 
 export const Login: React.FC = (): React.ReactElement => {

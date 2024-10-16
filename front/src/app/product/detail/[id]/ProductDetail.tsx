@@ -1,5 +1,8 @@
-import RenderProductId from "@/components/ProductComponents/RenderProductId/RenderProductId";
+// Vendors
 import React from "react";
+
+// Components
+import RenderProductId from "@/components/ProductComponents/RenderProductId/RenderProductId";
 
 interface IPropsProductDetail {
     params: {
