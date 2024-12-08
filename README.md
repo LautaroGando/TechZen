@@ -1,10 +1,6 @@
 # E-Commerce TechZen
 
-![TechZen - Home](https://github.com/user-attachments/assets/465cdaf8-cf4a-4e3d-a96f-6a6ca0806e33)
-![TechZen - Detalles del Producto](https://github.com/user-attachments/assets/dc1ac316-c78c-48d2-870f-9c6133311eb1)
-![TechZen - Carrito](https://github.com/user-attachments/assets/c55e3c78-afc9-4626-a812-ef488cd13e8a)
-![TechZen - Historial de Compras](https://github.com/user-attachments/assets/c50cdd2e-3f59-4dd0-8ca7-67c8bb988481)
-
+![TechZen - Home](https://github.com/LautaroGando/TechZen/blob/main/techzen.png)
 
 **E-Commerce TechZen** es una plataforma de comercio electrónico innovadora, diseñada para transformar la experiencia de compra en línea. Con un enfoque en la simplicidad y la usabilidad, Mercadito conecta a los usuarios con una amplia gama de productos, facilitando un proceso de compra rápido y eficiente.
 
